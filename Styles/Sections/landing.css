@@ -23,6 +23,23 @@
   flex: auto;
 }
 
+.w-nav-overlay {
+  display: block;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  left: 0;
+  right: -100px;
+  transition: all 300ms ease-in-out;
+}
+.w-nav-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+  left: 0;
+  right: 0;
+  transition: all 300ms ease-in-out;
+}
+
 .head-container {
   display: -webkit-box;
   display: -webkit-flex;
